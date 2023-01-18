@@ -87,8 +87,24 @@
 	</tbody></table>
 
 	<table border="0" cellpadding="4" cellspacing="0"><tbody><tr>
-	  <td><font size="2">DateTime:</font></td>
-	  <td><font size="2">2023/01/18 10:29:23</font></td>
+	  <td><font size="2" id="text"></font></td>
+	  <td><script type="text/javascript">
+	  
+ 		function showTime() {
+ 			var now = new Date();
+ 			console.log(now);
+ 			var nowyear = now.getFullYear();
+ 			var nowmonth = now.getMonth();
+ 			var nowdate = now.getDate();
+ 			var nowhour = now.getHours();
+ 			var nowminutes = now.getMinutes();
+ 			var nowseconds = now.getSeconds();
+
+ 			var text = "DateTime:  " +nowyear + "/" + nowmonth+1 + "/" + nowdate + " " + nowhour + ":" + nowminutes + ":" + nowseconds;
+
+ 			return text;
+ 		}
+</td>
 	</tr></tbody></table>
 
 	
