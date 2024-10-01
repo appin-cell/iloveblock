@@ -100,7 +100,7 @@
  			var nowminutes = now.getMinutes();
  			var nowseconds = now.getSeconds();
 
- 			var text = "DateTime:  " +nowyear + "/" + nowmonth+1 + "/" + nowdate + " " + nowhour + ":" + nowminutes + ":" + nowseconds;
+ 			var text = "DateTime:  " +nowyear + "/" + (Number(nowmonth)+1) + "/" + nowdate + " " + nowhour + ":" + nowminutes + ":" + nowseconds;
 
  			return text;
  		}
